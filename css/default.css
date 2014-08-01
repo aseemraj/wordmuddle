@@ -1,9 +1,0 @@
-﻿.lbtn{border:1px solid #fff;}#back{position:fixed;z-index:-1;}
-@font-face {
-    font-family: Chalk;
-    src: url('bootstrap/fonts/chalk.ttf') format('truetype');
-}
-#score{font-family:Chalk,sans-serif;font-size:38px;color:#fff;}
-#status, #levstat{font-family:Chalk,sans-serif;font-size:28px;color:#fff;}
-#back{height:100%;}
-#main{text-align:center;margin-left:160px;}

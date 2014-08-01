@@ -155,9 +155,7 @@ function pass() {
         level(lev);
     }
     else {
-        MSApp.execUnsafeLocalFunction(function () {
-            $('#status').html("It was <a style='color:#acf;' href='http://dictionary.reference.com/browse/"
-                + solved + "'>" + solved.toUpperCase() + "</a>"); level(lev);
-        });
+        $('#status').html("It was <a style='color:#acf;' href='http://dictionary.reference.com/browse/"
+            + solved + "'>" + solved.toUpperCase() + "</a>"); level(lev);
     }
 }
