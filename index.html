@@ -1,0 +1,76 @@
+﻿<!doctype HTML>
+<html lang="en">
+    <head>
+        <title>Anagrams</title>
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+        <!-- wordagram references -->
+        <link href="/css/default.css" rel="stylesheet" />
+        <script src="/js/default.js"></script>
+        <script src="/MSAdvertisingJS/ads/ad.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/btn.min.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#back').height($(window).height()).width($(window).width() - 320);
+                $('#back').css({ left: "160px" });
+                $('#new').on('click', function() {
+                    localStorage.score=0;
+                    localStorage.level=1;
+                    window.location.href = 'game.html';
+                });
+                $('#myAd1').css({ "top": $(window).height() / 2 - 300 });
+                $('#myAd2').css({ "top": $(window).height() / 2 - 300 });
+            });
+        </script>
+
+    </head>
+    <body style="background:#000;">
+        <img id="back" src="images/back.jpg">
+        <br><br><br><br><br><br><br><br>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-3"></div>
+                <button id="new" class="col-xs-6 btn btn--l btn--green">NEW GAME</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-3"></div>
+                <a href="game.html" class="col-xs-6 btn btn--l btn--green">RESUME GAME</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-3"></div>
+                <a href="achievements.html" class="col-xs-6 btn btn--l btn--green">ACHIEVEMENTS</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-3"></div>
+                <a href="highscore.html" class="col-xs-6 btn btn--l btn--green">HIGH SCORE</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-xs-3"></div>
+                <a href="instructions.html" class="col-xs-6 btn btn--l btn--green">INSTRUCTIONS</a>
+            </div>
+        </div>
+        <div id="myAd1" style="position: absolute; top: 0px; left: 0px; width: 160px; height: 600px; z-index: 1;"
+             data-win-control="MicrosoftNSJS.Advertising.AdControl"
+             data-win-options="{applicationId: 'e62ed704-19c9-4526-a36f-1672ee30b721', adUnitId: '180901'}">
+        </div>
+        <div id="myAd2" style="position: absolute; top: 0px; right: 0px; width: 160px; height: 600px; z-index: 1"
+             data-win-control="MicrosoftNSJS.Advertising.AdControl"
+             data-win-options="{applicationId: 'e62ed704-19c9-4526-a36f-1672ee30b721', adUnitId: '180902'}">
+        </div>
+    </body>
+</html>
